@@ -66,10 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	movieListForm();
 
-	//formAdd.addEventListener('click', (e) => {
+	//addBtn.addEventListener('click', (e) => {
 	//	вариант через препода, однако на нажатие реагирует вся кнопка
 
-	addBtn.addEventListener('click', (e) => {
+	formAdd.addEventListener('submit', (e) => {
 		e.preventDefault();
 		let val = input.value;
 		if (val) { //empty string = false
